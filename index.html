@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
- 
-  JS learn
+<body class = "container">
+    <hr/>
+<h1>web UI</h1>
+<hr/>
+<button id="todosBtn" class="btn btn-dark">Load top-5 todos</button>
+&nbsp;
+<select id= "pageCount">
+        <option >10</option>
+        <option >20</option>
+        <option >30</option>
+        <option >40</option>
+    </select>
+    &nbsp;
+    <input id ="inputText" size = 3/>
+    <hr />
+    <ul id="todos">
+    </ul>
+   
+    <inputText id = "inputTodo"></inputText>
+    <hr/>
 
-    <script src ="./set&map.js"></script>
+<button class = 'btn btn-primary' id ='startBtn'>start</button>
+<button class = 'btn btn-primary' disabled = true id ='stopBtn'>stop</button>
+<hr/>
+<div>
+<img src = './images/cat1.jpg' id ='catEle'>
+</div>
+<hr/>
+<div class = "alert alert-info">
+    welcome to web ui world
+</div>
+<button class = 'btn btn-danger'>hide</button>
+<button class = 'btn btn-success'>show</button>
+<button class = 'btn btn-primary'>What Next?</button>
+<script src ='./index.js'></script>
 </body>
 </html>
